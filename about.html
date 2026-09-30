@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikki Coding | About</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Pixel Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Navigasi -->
+    <header class="header">
+        <a href="index.html" class="logo-link">
+            <div class="logo">Ikki Coding</div>
+        </a>
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <!-- Tombol Lingkaran Ikon Saja -->
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme">🌙</button>
+        </nav>
+    </header>
+
+    <!-- Bagian Isi Utama -->
+    <main class="about-main">
+
+        <!-- Seksi Tentang Saya -->
+        <section class="box-container about-section">
+            <h2 class="section-title">Tentang Saya</h2>
+            <p>Halo! Saya Ikki, pemuda yang sedang mendalami dunia pemrograman web. Memiliki minat tinggi pada desain
+                UI/UX bergaya retro, boxy, dan modern Glassmorphism. Saya menyukai tantangan baru dalam memecahkan
+                masalah pemrograman frontend.</p>
+        </section>
+
+        <!-- Galeri Sertifikat (Slider dengan Tombol Navigasi) -->
+        <section class="box-container gallery-section">
+            <h2 class="section-title">Galeri Sertifikat</h2>
+            <div class="gallery-wrapper">
+                <button class="nav-btn prev-btn" id="prevBtn">&#10094;</button>
+                <div class="gallery-container">
+                    <div class="gallery-slider" id="gallerySlider">
+                        <div class="cert-card">
+                            <div class="cert-img-placeholder">
+                                <img src="images.png" alt="Sertifikat Web Dev Basic">
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-img-placeholder">
+                                <img src="images.png" alt="Sertifikat Responsive Design">
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-img-placeholder">
+                                <img src="images.png" alt="Sertifikat JavaScript Essential">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="nav-btn next-btn" id="nextBtn">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Portfolio Projects (Hanya 1 Project) -->
+        <section class="box-container portfolio-section">
+            <h2 class="section-title">Portfolio Project Saya</h2>
+            <div class="projects-grid">
+                <!-- Card Proyek Utama -->
+                <div class="box-container card-project">
+                    <div class="card-img-placeholder">
+                        <img src="images.png" alt="Website Portofolio Glassmorphism">
+                    </div>
+                    <h3>Website Portofolio Glassmorphism</h3>
+                    <p>Website portofolio pribadi bergaya Glassmorphism modern dengan sentuhan font pixel art, dibuat
+                        dengan HTML, CSS, dan JavaScript murni.</p>
+                    <a href="https://www.google.com/" class="btn-secondary" target="_blank">Ke Google</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seksi Skill Saya -->
+        <section class="box-container skills-section">
+            <h2 class="section-title">Skill Saya</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <div class="skill-label">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label">
+                        <span>CSS</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label">
+                        <span>JS</span>
+                        <span>30%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 30%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Dibuat oleh Ikki &copy; 2026</p>
+            <div class="social-links">
+                <a href="https://wa.me/" target="_blank">WhatsApp</a>
+                <a href="https://instagram.com/" target="_blank">Instagram</a>
+                <a href="https://threads.net/" target="_blank">Threads</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tombol Back to Top -->
+    <button id="backToTopBtn" title="Kembali ke atas">▲ TOP</button>
+
+    <!-- JavaScript Terpisah -->
+    <script src="script.js"></script>
+</body>
+
+</html>
